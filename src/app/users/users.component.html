@@ -1,0 +1,37 @@
+<!-- <div>
+    <button (click)="onCategoriesClick()" class="btn btn-primary">Go to Categories</button>
+</div>
+
+<div>
+    <div>User with Id is {{user.id}}</div>
+    <div>User with name is {{user.name}}</div>
+</div>
+
+<div>
+    <a [routerLink]="['/users',1,'leela']" 
+    [queryParams]="{page:1,search:'leela'}"
+    [fragment]="'load'"
+    >Get Details of Leela</a>
+</div>
+
+<div>
+    <button (click)="getRamaDetails()">getRamaDetails</button>
+</div> -->
+
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a [routerLink]="['/users',1,'Rama']" class="nav-link">Get Rama Deatails</a>
+    </li>
+    <li class="nav-item">
+        <a [routerLink]="['/users',1,'Krishna']" class="nav-link">Get Krishna Deatails</a>
+    </li>
+    <li class="nav-item">
+        <a [routerLink]="['/users',1,'Leela']" class="nav-link">Get Leela Deatails</a>
+    </li>
+</ul>
+<div>
+    <button type="button" class="btn btn-primary" >User Added</button>
+</div>
+<!-- <div>
+    <router-outlet></router-outlet>
+</div> -->

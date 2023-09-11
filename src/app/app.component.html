@@ -1,0 +1,31 @@
+<div class="container my-4">
+  <div class="row">
+    <div class="col md-3">
+      <ul class="nav flex-column nav-pills">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/users" class="nav-link" routerLinkActive="active">Users</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/caterories']" class="nav-link" routerLinkActive="active">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/templateform']" class="nav-link" routerLinkActive="active">Template Forms</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/reactiveform']" class="nav-link" routerLinkActive="active">Reactive Forms</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
